@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,115 +13,167 @@
 
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f7f9fc;
-      color: #1f2937;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f6f7f9;
+      color: #1f2933;
     }
 
     header {
       background: #ffffff;
-      padding: 20px 8%;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 22px 8%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #e5e7eb;
     }
 
-    .logo {
-      font-size: 22px;
-      font-weight: bold;
-      color: #174ea6;
+    .marca {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+
+    .status {
+      font-size: 14px;
+      color: #6b7280;
     }
 
     .hero {
+      padding: 90px 20px 70px;
       text-align: center;
-      padding: 80px 20px 60px;
-      background: linear-gradient(135deg, #eef6ff, #ffffff);
+      background: #ffffff;
     }
 
     .hero h1 {
-      font-size: 46px;
-      margin-bottom: 12px;
-      color: #17365d;
+      margin: 0 0 18px;
+      font-size: 52px;
+      font-weight: 700;
+      letter-spacing: -1.5px;
+      color: #111827;
     }
 
     .hero p {
+      max-width: 700px;
+      margin: 0 auto 36px;
       font-size: 18px;
-      color: #5f6b7a;
-      margin-bottom: 35px;
+      line-height: 1.6;
+      color: #5f6772;
     }
 
     .busca {
-      max-width: 650px;
-      margin: auto;
+      max-width: 720px;
+      margin: 0 auto;
     }
 
     .busca input {
       width: 100%;
-      padding: 18px 22px;
-      border-radius: 14px;
-      border: 1px solid #d8dee8;
+      padding: 18px 20px;
+      border: 1px solid #d7dce2;
+      border-radius: 10px;
       font-size: 16px;
+      background: #ffffff;
       outline: none;
-      background: white;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
     }
 
-    .conteudo {
+    .busca input:focus {
+      border-color: #7b8794;
+    }
+
+    main {
       max-width: 1100px;
-      margin: auto;
-      padding: 50px 20px;
+      margin: 0 auto;
+      padding: 70px 20px 90px;
     }
 
-    .conteudo h2 {
-      text-align: center;
-      color: #17365d;
-      margin-bottom: 35px;
+    .topo-secao {
+      margin-bottom: 30px;
+    }
+
+    .topo-secao h2 {
+      margin: 0 0 8px;
+      font-size: 30px;
+      color: #111827;
+    }
+
+    .topo-secao p {
+      margin: 0;
+      color: #6b7280;
+      font-size: 16px;
     }
 
     .categorias {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
     }
 
     .categoria {
-      background: white;
-      padding: 30px 20px;
-      border-radius: 16px;
-      text-align: center;
-      border: 1px solid #edf0f4;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.04);
-      transition: 0.2s;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      padding: 30px;
+      transition: 0.2s ease;
       cursor: pointer;
     }
 
     .categoria:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
     }
 
-    .icone {
-      font-size: 32px;
-      margin-bottom: 12px;
+    .categoria .numero {
+      font-size: 13px;
+      color: #8b949e;
+      margin-bottom: 28px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     .categoria h3 {
+      margin: 0 0 10px;
+      font-size: 24px;
+      color: #111827;
+    }
+
+    .categoria p {
       margin: 0;
-      color: #174ea6;
+      line-height: 1.6;
+      color: #6b7280;
+    }
+
+    .sobre {
+      margin-top: 60px;
+      background: #eceff3;
+      border-radius: 14px;
+      padding: 34px;
+    }
+
+    .sobre h2 {
+      margin-top: 0;
+      color: #111827;
+    }
+
+    .sobre p {
+      margin-bottom: 0;
+      line-height: 1.7;
+      color: #59616d;
     }
 
     footer {
-      margin-top: 40px;
-      padding: 30px;
+      background: #111827;
+      color: #d1d5db;
       text-align: center;
-      background: #17365d;
-      color: white;
+      padding: 28px 20px;
+      font-size: 14px;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
       .hero h1 {
-        font-size: 34px;
+        font-size: 38px;
+      }
+
+      .categorias {
+        grid-template-columns: 1fr;
       }
 
       header {
@@ -135,69 +186,69 @@
 <body>
 
   <header>
-    <div class="logo">Glossário de Libras</div>
-    <div>Sobre o projeto</div>
+    <div class="marca">Glossário de Libras</div>
+    <div class="status">Projeto em desenvolvimento</div>
   </header>
 
   <section class="hero">
-
     <h1>Glossário de Libras</h1>
 
     <p>
-      Conhecimento que se vê. Comunicação que conecta.
+      Consulta de sinais em Libras utilizados no contexto institucional
+      e acadêmico.
     </p>
 
     <div class="busca">
-      <input
-        type="text"
-        placeholder="🔎 Pesquise um sinal..."
-      >
+      <input type="text" placeholder="Pesquise um sinal">
     </div>
-
   </section>
 
-  <main class="conteudo">
+  <main>
 
-    <h2>Explore por categorias</h2>
-
-    <div class="categorias">
-
-      <div class="categoria">
-        <div class="icone">🏫</div>
-        <h3>Instituição</h3>
-      </div>
-
-      <div class="categoria">
-        <div class="icone">📚</div>
-        <h3>Acadêmico</h3>
-      </div>
-
-      <div class="categoria">
-        <div class="icone">👥</div>
-        <h3>Profissões</h3>
-      </div>
-
-      <div class="categoria">
-        <div class="icone">🏢</div>
-        <h3>Setores</h3>
-      </div>
-
-      <div class="categoria">
-        <div class="icone">📍</div>
-        <h3>Espaços</h3>
-      </div>
-
-      <div class="categoria">
-        <div class="icone">🤟</div>
-        <h3>Acessibilidade</h3>
-      </div>
-
+    <div class="topo-secao">
+      <h2>Áreas disponíveis</h2>
+      <p>
+        Explore os sinais já organizados no glossário.
+      </p>
     </div>
+
+    <section class="categorias">
+
+      <div class="categoria">
+        <div class="numero">Coleção 01</div>
+        <h3>Instituição</h3>
+        <p>
+          Sinais relacionados a espaços, setores, serviços e termos
+          utilizados no cotidiano institucional.
+        </p>
+      </div>
+
+      <div class="categoria">
+        <div class="numero">Coleção 02</div>
+        <h3>Design Gráfico</h3>
+        <p>
+          Sinais relacionados ao curso, aos conteúdos e aos termos
+          específicos da área de Design Gráfico.
+        </p>
+      </div>
+
+    </section>
+
+    <section class="sobre">
+      <h2>Sobre o glossário</h2>
+
+      <p>
+        Este projeto tem como objetivo organizar e facilitar a consulta
+        de sinais em Libras utilizados em contextos institucionais e
+        acadêmicos. O glossário está em desenvolvimento e poderá receber
+        novas áreas, sinais e registros ao longo do projeto.
+      </p>
+    </section>
 
   </main>
 
   <footer>
-    Glossário de Libras • Projeto Institucional
+    Glossário de Libras • Projeto em desenvolvimento
   </footer>
 
 </body>
