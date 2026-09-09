@@ -1,1 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Glossário de Libras</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      color: #1f2937;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #174ea6;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px 60px;
+      background: linear-gradient(135deg, #eef6ff, #ffffff);
+    }
+
+    .hero h1 {
+      font-size: 46px;
+      margin-bottom: 12px;
+      color: #17365d;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #5f6b7a;
+      margin-bottom: 35px;
+    }
+
+    .busca {
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .busca input {
+      width: 100%;
+      padding: 18px 22px;
+      border-radius: 14px;
+      border: 1px solid #d8dee8;
+      font-size: 16px;
+      outline: none;
+      background: white;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    }
+
+    .conteudo {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .conteudo h2 {
+      text-align: center;
+      color: #17365d;
+      margin-bottom: 35px;
+    }
+
+    .categorias {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 20px;
+    }
+
+    .categoria {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 16px;
+      text-align: center;
+      border: 1px solid #edf0f4;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.04);
+      transition: 0.2s;
+      cursor: pointer;
+    }
+
+    .categoria:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .icone {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .categoria h3 {
+      margin: 0;
+      color: #174ea6;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 30px;
+      text-align: center;
+      background: #17365d;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      header {
+        padding: 18px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Glossário de Libras</div>
+    <div>Sobre o projeto</div>
+  </header>
+
+  <section class="hero">
+
+    <h1>Glossário de Libras</h1>
+
+    <p>
+      Conhecimento que se vê. Comunicação que conecta.
+    </p>
+
+    <div class="busca">
+      <input
+        type="text"
+        placeholder="🔎 Pesquise um sinal..."
+      >
+    </div>
+
+  </section>
+
+  <main class="conteudo">
+
+    <h2>Explore por categorias</h2>
+
+    <div class="categorias">
+
+      <div class="categoria">
+        <div class="icone">🏫</div>
+        <h3>Instituição</h3>
+      </div>
+
+      <div class="categoria">
+        <div class="icone">📚</div>
+        <h3>Acadêmico</h3>
+      </div>
+
+      <div class="categoria">
+        <div class="icone">👥</div>
+        <h3>Profissões</h3>
+      </div>
+
+      <div class="categoria">
+        <div class="icone">🏢</div>
+        <h3>Setores</h3>
+      </div>
+
+      <div class="categoria">
+        <div class="icone">📍</div>
+        <h3>Espaços</h3>
+      </div>
+
+      <div class="categoria">
+        <div class="icone">🤟</div>
+        <h3>Acessibilidade</h3>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    Glossário de Libras • Projeto Institucional
+  </footer>
+
+</body>
+</html>
