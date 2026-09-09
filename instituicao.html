@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Instituição | Glossário de Libras</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f6f7f9;
+      color: #1f2933;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .marca {
+      font-size: 20px;
+      font-weight: 700;
+      color: #111827;
+      text-decoration: none;
+    }
+
+    .voltar {
+      font-size: 14px;
+      color: #6b7280;
+      text-decoration: none;
+    }
+
+    .hero {
+      background: #ffffff;
+      padding: 70px 20px 55px;
+    }
+
+    .hero-conteudo {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .breadcrumb {
+      font-size: 14px;
+      color: #8b949e;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: 44px;
+      color: #111827;
+    }
+
+    .hero p {
+      margin: 0;
+      font-size: 17px;
+      color: #667085;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 50px 20px 80px;
+    }
+
+    .busca {
+      margin-bottom: 35px;
+    }
+
+    .busca input {
+      width: 100%;
+      padding: 16px 18px;
+      border: 1px solid #d7dce2;
+      border-radius: 10px;
+      font-size: 16px;
+      background: white;
+    }
+
+    .lista {
+      display: grid;
+      gap: 16px;
+    }
+
+    .sinal {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.2s ease;
+    }
+
+    .sinal:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    }
+
+    .sinal h2 {
+      margin: 0;
+      font-size: 21px;
+      color: #111827;
+    }
+
+    .sinal span {
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    footer {
+      background: #111827;
+      color: #d1d5db;
+      text-align: center;
+      padding: 28px 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .sinal {
+        align-items: flex-start;
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a class="marca" href="index.html">Glossário de Libras</a>
+    <a class="voltar" href="index.html">← Voltar para o início</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-conteudo">
+      <div class="breadcrumb">Glossário / Instituição</div>
+      <h1>Instituição</h1>
+      <p>
+        Sinais relacionados ao contexto institucional.
+      </p>
+    </div>
+  </section>
+
+  <main>
+
+    <div class="busca">
+      <input type="text" placeholder="Pesquise nesta coleção">
+    </div>
+
+    <div class="lista">
+
+      <div class="sinal">
+        <h2>Feevale</h2>
+        <span>Assistir sinal →</span>
+      </div>
+
+      <div class="sinal">
+        <h2>Feevale Techpark</h2>
+        <span>Assistir sinal →</span>
+      </div>
+
+      <div class="sinal">
+        <h2>Rua Coberta</h2>
+        <span>Assistir sinal →</span>
+      </div>
+
+      <div class="sinal">
+        <h2>Inove</h2>
+        <span>Assistir sinal →</span>
+      </div>
+
+      <div class="sinal">
+        <h2>NAIA</h2>
+        <span>Assistir sinal →</span>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    Glossário de Libras • Projeto em desenvolvimento
+  </footer>
+
+</body>
+</html>
